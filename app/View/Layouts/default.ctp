@@ -23,7 +23,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
+		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -38,12 +38,16 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<!-- <h1><?php //echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1> -->
+
 		</div>
 		<div id="content">
-
+			
 			<?php echo $this->Session->flash(); ?>
+			
+			
 
+<?php echo $this->Html->image('odfjell-logo.jpg', array('alt' => 'logo', 'border' => '0')); ?>
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
@@ -54,7 +58,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				);
 			?>
 			<p>
-				<?php echo $cakeVersion; ?>
+				<?php //echo $cakeVersion; ?>
 			</p>
 		</div>
 	</div>
