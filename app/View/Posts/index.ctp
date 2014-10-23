@@ -1,7 +1,7 @@
 <br><br><br><br>
 <h1>How can ICT help improve your productivity?</h1>
 <br>
-<h1>(ICT training or tutorial you require.)</h1>
+<h1>(Kindly input your name and IT training/tutorial you require then click send button.)</h1>
 <br><br>
 <?php
 echo $this->Form->create('Post');
