@@ -14,7 +14,7 @@ class PostsController extends AppController {
 			$this->Post->create();
 		
 			if ($this->Post->save($this->request->data)) {
-				$this->Session->setFlash(__('New visitor created'));
+				$this->Session->setFlash(__('Thank you for your participation'));
 				return $this->redirect(array('action' => 'index'));
 			}
 			
